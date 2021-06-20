@@ -1,0 +1,21 @@
+spring:
+    datasource:
+       #根据MySQL版本配置驱动类5.x----8.x 驱动类“com.mysql.jdbc.Driver” 或 “com.mysql.cj.jdbc.Driver”。
+       driver-class-name: com.mysql.cj.jdbc.Driver
+       #useSSL：SSL协议提供服务主要作用：（不建议在没有服务器身份验证的情况下建立SSL连接。）
+       #   1）认证用户服务器，确保数据发送到正确的服务器； 　　 .
+       #   2）加密数据，防止数据传输途中被窃取使用；
+       #   3）维护数据完整性，验证数据在传输过程中是否丢失；
+       #serverTimezone：设置时区，不设置会报错。GMT%2B8：东八区北京时间  Asia/Shanghai：上海时间
+       #useServerPrepStmts：在url中给出useServerPrepStmts=true参数，开启预编译（默认PS是关闭的）
+       #allowMultiQueries：设置为true，开启批量执行sql的开关。更多请持续关注博主文档
+       url: jdbc:mysql://localhost:3306/spring-test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true
+       username: root
+       password: root
+#
+#    ro-datasource:
+#       driver-class-name: com.mysql.jdbc.Driver
+#       url: jdbc:mysql://localhost:3306/spring-test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true
+#       username: ro
+#       password: ro_password
+
