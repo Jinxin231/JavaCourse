@@ -1,0 +1,26 @@
+
+# 主数据源
+mysql.datasource.one.url = jdbc:mysql://localhost:3306/spring-test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true
+mysql.datasource.one.username =root
+mysql.datasource.one.password =root
+mysql.datasource.one.minPoolSize =3
+mysql.datasource.one.maxPoolSize =25
+mysql.datasource.one.maxLifetime =20000
+mysql.datasource.one.borrowConnectionTimeout =30
+mysql.datasource.one.loginTimeout =30
+mysql.datasource.one.maintenanceInterval =60
+mysql.datasource.one.maxIdleTime =60
+mysql.datasource.one.testQuery =select 1
+
+  # 数据源 2
+mysql.datasource.two.url =jdbc:mysql://localhost:3306/springbootv2?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true
+mysql.datasource.two.username =root
+mysql.datasource.two.password =jroot
+mysql.datasource.two.minPoolSize =3
+mysql.datasource.two.maxPoolSize =25
+mysql.datasource.two.maxLifetime =20000
+mysql.datasource.two.borrowConnectionTimeout =30
+mysql.datasource.two.loginTimeout =30
+mysql.datasource.two.maintenanceInterval =60
+mysql.datasource.two.maxIdleTime =60
+mysql.datasource.two.testQuery =select
