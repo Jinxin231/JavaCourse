@@ -1,0 +1,6 @@
+#server.port = 8080
+#server.profiles.active = true
+#server.tomcat.max-http-header-size = 8192
+
+#rpc.netty.server = true
+#rpc.netty.port = 8080
